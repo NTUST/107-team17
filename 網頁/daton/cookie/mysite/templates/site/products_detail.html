@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>products_detail</title>
+</head>
+<body>
+	{% for product  in pd %}
+		<h1>{{product.name}}</h1>
+		{% load static %} 
+		<img src="{% static product.image %}" alt="it's actually a photo"width="205" height="300">
+		<p>{{product.intro}}</p>
+		<p>{{product.information}}</p>
+		{% load static %} 
+		<img src="{% static product.otherimages1 %}" onerror="this.src='{% static "images/onerror.png" %}'">
+		{% load static %} 
+		<img src="{% static product.otherimages2 %}" onerror="this.src='{% static "images/onerror.png" %}'">
+		{% load static %} 
+		<img src="{% static product.otherimages2 %}" onerror="this.src='{% static "images/onerror.png" %}'">
+
+	{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+</head>
+<body>
+	{% for about in a %}
+
+	<div>
+		<h1>{{about.name}}</h1>
+		<p>{{about.title}}</p>
+		<p>{{about.intro}}</p>
+		{% load static %} 
+		<img src="{% static about.image %}" alt="it's actually a photo"width="50" height="50">
+		<!--"{% static "images/about_us/171028_0002.jpg" %}"-->
+
+
+
+
+		
+	</div>
+
+
+	{% endfor %}
+
+
+
+</body>
+</html>

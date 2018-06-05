@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>products</title>
+</head>
+<body>
+	{% for product in products %}
+	<div>
+		<h2>{{product.name}}</h2>
+		{% load static %} 
+		<a href="/productsdetail?name={{product.name}}"><img src="{% static product.image %}" alt="it's actually a photo"width="50" height="50"></a>
+	</div>
+
+
+	{% endfor %}
+
+</body>
+</html>
