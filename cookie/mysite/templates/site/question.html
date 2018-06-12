@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!--
+	Colorized by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		{% load staticfiles %}
+		<title>大同食品</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-panels.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>
+		
+
+
+		<link rel="stylesheet" href="{% static 'css/skel-noscript.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style-desktop.css' %}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.topnav_s {
+	border-radius: 10px;
+	margin:0px 8.89% 0px 8.89%;
+	overflow: hidden;
+	background-color: rgb(255,149,149);
+	height: 100%;
+
+}
+.topnav_s a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	margin: 1.3% 6.8%;
+	text-decoration: none;
+	font-size: 17px;
+	white-space: pre;
+			
+}
+.topnav_s a:hover {
+			
+    color: rgb(175,30,30);
+}
+.topnav_s a.active {
+			
+	color: rgb(175,30,30);
+}
+.logo_s{
+	width: 100% ;
+	height:80px; 
+	text-align: center;
+	line-height:80px;
+	background-color: white;
+			
+			
+}
+.logo_s a{
+	text-decoration:none;
+	font-size: 2em;
+	color:black;
+}
+.logo_s a.lang{
+	text-decoration:none;
+	font-size: 0.5em;
+	color:black;
+
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+	</style>
+	</head>
+	<body class="homepage" style="background-color: white ;background-image:none;" >
+
+	<!-- Header -->
+		<div class="logo_s">
+	<a href="/"style=" padding:0px 10px;margin-left:57px ;border-left: 5px solid pink;">大同食品</a>
+	<span style="float:right; padding-right: 10px ;font-size:0.5em"><a href="/englishver">English</a>|<a href="/">繁</a></span>
+</div>
+
+
+<div class="topnav_s">
+<a href="/about">關於大同
+About
+</a>
+<a href="/news">最新消息
+News</a>
+<a href="/products">產品介紹
+Products</a>
+<a class="active"href="/q&a">常見問題
+FQA
+</a>
+<a href="/contact">聯絡我們
+Contact
+</a>
+</div>
+
+
+<br>
+<!-- Header -->
+	
+
+	<!-- Main -->
+	
+		<div id="main" style="height:2000px">
+
+			<!-- Main Content (border:2px solid black) -->
+			<div style="width:38%;height:20%;float:right;">
+				{% load staticfiles %}
+				<input type="image" src="{% static "images/question/button4.jpg" %}" style="margin-left:5%;margin-top:25%;width:45%"  onClick="dogo1();">
+			</div>
+			<div style="width:62%;float:right;height:20%;">
+				<img src="{% static "images/question/q1.jpg" %}" alt="question1" style="padding-left:40%;width:100%">
+				<img id="qus_1" src="{% static "images/question/product.gif" %}" alt="question1" style="padding-left:60%;width:89%">
+			</div>
+
+
+
+			<div style="width:38%;height:20%;float:right ;margin-top:30px;">
+				<input type="image" src="{% static "images/question/button4.jpg" %}" style="margin-left:5%;margin-top:25%;width:45%"  onClick="dogo2();">
+			</div>
+			<div style="width:62%;float:right;height:20%;margin-top:30px;">
+				<img src="{% static "images/question/q2.jpg" %}" alt="question2" style="padding-left:40%;width:100%">
+				<img id="qus_2" src="{% static "images/question/rain.gif" %}" alt="question1" style="padding-left:60%;width:89%">
+			</div>
+
+			
+			
+			<div style="width:38%;height:20%;float:right;margin-top:20px;">
+				<input type="image" src="{% static "images/question/button4.jpg" %}" style="margin-left:5%;margin-top:25%;width:45%"  onClick="dogo3();">
+			</div>
+			<div style="width:62%;float:left;height:20%;margin-top:20px;">
+				<img src="{% static "images/question/q3.jpg" %}" alt="question3" style="padding-left:40%;width:100%">
+				<img id="qus_3" src="{% static "images/question/loser.gif" %}" alt="question1" style="padding-left:60%;width:89%">
+			</div>
+
+			<div style="width:38%;height:20%;float:right;margin-top:20px;">
+				<input type="image" src="{% static "images/question/button4.jpg" %}" style="margin-left:5%;margin-top:25%;width:45%"  onClick="dogo4();">
+			</div>
+			<div style="width:62%;float:left;height:20%;margin-top:20px;">
+				<img src="{% static "images/question/q4.jpg" %}" alt="question4" style="padding-left:40%;width:100%">
+				<img id="qus_4" src="{% static "images/question/quiz.gif" %}" alt="question1" style="padding-left:60%;width:89%">
+			</div>
+			
+
+			</div>
+			
+
+		
+			
+			<!-- /Main Content -->
+			
+		</div>
+	<!-- /Main -->
+
+	<!-- Footer -->
+			<div id="footer" style="background-color: rgb(212,92,92);"> 
+			<div class="container">
+				<div class="row">
+					<div class="6u">
+						<section>
+							<header> 
+								<h2>大同國際食品公司</h2>
+							</header>
+							<p>地址:台中市西屯區工業三十六路26號(台中工業區)</p>
+							<p>電話:(04)2359-5379</p>
+							<p>傳真:(04)2358-1298</p>
+						</section>
+					</div>
+					<div id="fbox1" class="3u"  >
+						<section>
+							<header>
+								<h2>網站地圖</h2>
+							</header>
+							<ul style="list-style-type:disc; color:white; padding-left: 25px" >
+								<li ><a href="about" style="color: white;text-decoration:none; ">關於大同</a></li>
+								<li ><a href="news" style="color: white;text-decoration:none;">最新消息</a></li>
+								<li ><a href="products" style="color: white;text-decoration:none;">產品介紹</a></li>
+								<li ><a href="question" style="color: white;text-decoration:none;">常見問題</a></li>
+								<li ><a href="contact" style="color: white;text-decoration:none;">聯絡我們</a></li>
+							</ul>
+						</section>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+
+<div id="copyright" style="background-color: rgb(29 ,29, 29);">
+			<div class="container">
+				<section>
+					<a>A cookie a day keeps the doctor away!<a>
+				</section>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+
+<script>
+function dogo1(){
+  var urls = new Array();
+  urls[0] = "{% static "images/question/p1.jpg" %}";
+  urls[1] = "{% static "images/question/p2.jpg" %}";
+  urls[2] = "{% static "images/question/p3.jpg" %}";
+  urls[3] = "{% static "images/question/p4.jpg" %}";
+  urls[4] = "{% static "images/question/p5.jpg" %}";
+  n = Math.floor(Math.random()*5);
+  document.getElementById("qus_1").src = urls[n];
+}
+
+function dogo2(){
+  var urls = new Array();
+  urls[0] = "{% static "images/question/不會下雨.png" %}";
+  urls[1] = "{% static "images/question/豪大雨.png" %}";
+  urls[2] = "{% static "images/question/不知道.png" %}";
+  urls[3] = "{% static "images/question/颱風雨.png" %}";
+  urls[4] = "{% static "images/question/暴風雨.png" %}";
+  urls[5] = "{% static "images/question/毛毛雨.png" %}";
+  urls[6] = "{% static "images/question/大雨.png" %}";
+  n = Math.floor(Math.random()*7);
+  document.getElementById("qus_2").src = urls[n];
+}
+
+function dogo3(){
+  var urls = new Array();
+  urls[0] = "{% static "images/question/會.png" %}";
+  urls[1] = "{% static "images/question/不告訴你呵呵.png" %}";
+  urls[2] = "{% static "images/question/臭魯蛇.png" %}";
+  urls[3] = "{% static "images/question/不會.png" %}";
+  urls[4] = "{% static "images/question/你覺得呢.png" %}";
+  urls[5] = "{% static "images/question/不知道.png" %}";
+  n = Math.floor(Math.random()*6);
+  document.getElementById("qus_3").src = urls[n];
+}
+
+function dogo4(){
+  var urls = new Array();
+  urls[0] = "{% static "images/question/低空飛過.png" %}";
+  urls[1] = "{% static "images/question/不知道.png" %}";
+  urls[2] = "{% static "images/question/讓你嗨趴.png" %}";
+  urls[3] = "{% static "images/question/不會.png" %}";
+  urls[4] = "{% static "images/question/不告訴你呵呵.png" %}";
+  urls[5] = "{% static "images/question/你覺得呢.png" %}";
+  urls[6] = "{% static "images/question/去問老師.png" %}";
+  urls[7] = "{% static "images/question/有種當我.png" %}";
+  urls[8] = "{% static "images/question/會.png" %}";
+  n = Math.floor(Math.random()*9);
+  document.getElementById("qus_4").src = urls[n];
+}
+</script>
+
+
+	</body>
+</html>
+
+

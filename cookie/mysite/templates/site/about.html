@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大同食品</title>
+	{% load staticfiles %}
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-panels.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>
+		
+
+
+		<link rel="stylesheet" href="{% static 'css/skel-noscript.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style-desktop.css' %}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.topnav_s {
+	border-radius: 10px;
+	margin:0px 8.89% 0px 8.89%;
+	overflow: hidden;
+	background-color: rgb(255,149,149);
+	height: 100%;
+
+}
+.topnav_s a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	margin: 1.3% 6.8%;
+	text-decoration: none;
+	font-size: 17px;
+	white-space: pre;
+			
+}
+.topnav_s a:hover {
+			
+    color: rgb(175,30,30);
+}
+.topnav_s a.active {
+			
+	color: rgb(175,30,30);
+}
+.logo_s{
+	width: 100% ;
+	height:80px; 
+	text-align: center;
+	line-height:80px;
+	background-color: white;
+			
+			
+}
+.logo_s a{
+	text-decoration:none;
+	font-size: 2em;
+	color:black;
+}
+.logo_s a.lang{
+	text-decoration:none;
+	font-size: 0.5em;
+	color:black;
+
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+
+</style>
+</head>
+<body style="background-color: white; background-image: none;">
+
+	<div class="logo_s">
+	<a href="/"style=" padding:0px 10px;margin-left:57px ;border-left: 5px solid pink;">大同食品</a>
+	<span style="float:right; padding-right: 10px ;font-size:0.5em"><a href="/englishver">English</a>|<a href="/">繁</a></span>
+</div>
+
+
+<div class="topnav_s">
+<a class="active" href="/about">關於大同
+About
+</a>
+<a href="/news">最新消息
+News</a>
+<a href="/products">產品介紹
+Products</a>
+<a href="/q&a">常見問題
+FQA
+</a>
+<a href="/contact">聯絡我們
+Contact
+</a>
+</div>
+
+
+<br>
+
+	<!-- Header -->
+	
+	<div style="width:100%; height:60px;background-color:pink">
+		<div style="margin: 0px 40% ;">
+		<p style="box-sizing: border-box;text-align:center;font-size: 2.7em;line-height:58px;color:white;
+		border-bottom: 5px solid red;">
+		關於我們</p>
+	    </div>
+	</div>
+	<div style="margin-left:150px;margin-right:150px">
+				
+				<div >
+					<br>
+						<section>
+							<div style="float:left;height:400px ;">
+								{% load static %}
+								<a href="#" ><img src='{% static "images/about_us/logo.jpg" %}'  alt="" style="width:500px;margin-right:20px"></a>
+					
+							</div>		
+							<div style="padding-left:55px;padding-top:60px;font-size:20px;height:400px">創立以來，大同公司堅持提供消			費者大眾健康美食為職志，積極致力專業人才與生產技術的充實，在全體同仁辛勤耕耘之下		企業不斷成長茁壯。
+							<br>
+
+							大同國際食品有限公司在此服務您，感謝新老客戶的支持惠顧歡迎各合作夥伴洽談、指導，本公司以負責的企業經營態度締造出眾口皆碑的優良品質，我們不以現有成就為滿足，對資訊化社會的來臨，我們亦利用資訊網路不斷引進新的科技與新產品的介紹，以符合社會需求。我們視研究開發為企業再創生命力的重要泉源，我們以高服務品質和利潤分享顧客，作為對合作廠商最直接的回饋，期能達到共榮雙贏的局面。
+							</div>
+
+							<hr class="style-two">
+							<br>
+
+
+						    {% for about in a %}
+						    <div style="margin-left:350px;float:left;height:400px;">
+								<a href="#" ><img src="{% static about.image %}" alt="it's actually a photo"
+									style="width:200px;margin-hight:20px; border-radius: 50%;"></a>
+							</div>		
+							<div style="margin-left:300px;padding-top:35px;height:400px ;"><zxc style="font-size:40px;margin-left:30px">{{about.name}}<br><br></zxc><ul style="list-style-type:disc;font-size:30px;margin-left:300px"><li>{{about.title}}</li><br><li>{{about.title}}</li></ul>
+
+							</div>
+							{% endfor %}	
+
+							
+
+
+
+						</section>
+				
+
+				
+				</div>
+			
+			</div>
+	
+
+
+<div id="footer" style="background-color: rgb(212,92,92);"> 
+			<div class="container">
+				<div class="row">
+					<div class="6u">
+						<section>
+							<header> 
+								<h2>大同國際食品公司</h2>
+							</header>
+							<p>地址:台中市西屯區工業三十六路26號(台中工業區)</p>
+							<p>電話:(04)2359-5379</p>
+							<p>傳真:(04)2358-1298</p>
+						</section>
+					</div>
+					<div id="fbox1" class="3u"  >
+						<section>
+							<header>
+								<h2>網站地圖</h2>
+							</header>
+							<ul style="list-style-type:disc; color:white; padding-left: 25px" >
+								<li ><a href="/about" style="color: white;text-decoration:none; ">關於大同</a></li>
+								<li ><a href="/news" style="color: white;text-decoration:none;">最新消息</a></li>
+								<li ><a href="/products" style="color: white;text-decoration:none;">產品介紹</a></li>
+								<li ><a href="/question" style="color: white;text-decoration:none;">常見問題</a></li>
+								<li ><a href="/contact" style="color: white;text-decoration:none;">聯絡我們</a></li>
+							</ul>
+						</section>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+
+<div id="copyright" style="background-color: rgb(29 ,29, 29);">
+			<div class="container">
+				<section>
+					<a>A cookie a day keeps the doctor away!<a>
+				</section>
+			</div>
+		</div>
+
+
+
+
+</body>
+</html>
